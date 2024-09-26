@@ -11,10 +11,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "um dos pricipais desafios é a  mudança  climatica que afeta a producao agricula reduzindo a disponibulidade de alimentos  e almento os preços ",
+               afirmacao :"sim."
             },
             {
-                texto: "A desiglaldade economica tambem desenpenha um papel crucial pois  muitas  comunidades nao tem acesso e recursos adequadas para prodozir ou adiquirir alimentos ",
-                
+                afirmacao : "A desiglaldade economica tambem desenpenha um papel crucial pois  muitas  comunidades nao tem acesso e recursos adequadas para prodozir ou adiquirir alimentos ",
+                afirmacao :"não."
             }
         ]
     },
@@ -22,11 +23,11 @@ const perguntas = [
         enunciado: "Deque maneira as politicas publicas  podem ser afetivas  na promoçao da aegurança alimentos, levados em conta  a nesssesidade  de garantir  acessos diponibilidades e utilizaçao adequadas dos alimentos?",
         alternativas: [
             {
-                texto: "Politicas de subsidios agriculas podem aumentar a produçao local .",
+                afirmacao : "Politicas de subsidios agriculas podem aumentar a produçao local .",
                 
             },
             {
-                texto: "Programas de educaçao alimentar ajudam na escolha de refeiçoes saudadeveis?",
+                afirmacao : "Programas de educaçao alimentar ajudam na escolha de refeiçoes saudadeveis?",
                 
             }
         ]
@@ -34,12 +35,12 @@ const perguntas = [
     {
         enunciado: "Quais são os desafios enfrentados pela comunidades urbanas em relaçao a seguranca alimentar, considerando o crecimento das cidades e a urbanizacao acelerada?",
         alternativas: [
-            {Defe
-                texto: "A falta de espaço para cultivos li,ita o acesso a alimentos frescos.",
+            {
+                afirmacao : "A falta de espaço para cultivos li,ita o acesso a alimentos frescos.",
                
             },
             {
-                texto: "O alimentodos preços dos alimentos prejudicial as populaçoes de baixa renda.",
+                afirmacao : "O alimentodos preços dos alimentos prejudicial as populaçoes de baixa renda.",
                
             }
         ]
@@ -57,19 +58,7 @@ const perguntas = [
             }
         ]
     },
-    {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
-        alternativas: [
-            {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
-            },
-            {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
-            }
-        ]
-    },
+   
 ];
 
 
@@ -98,8 +87,6 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
