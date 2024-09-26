@@ -32,28 +32,28 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Quais sãoos desafios enfrentados pela comunidades urbanas em relaçao a seguranca alimentar, considerando o crecimento das cidades e a urbanizacao acelerada?",
+        enunciado: "Quais são os desafios enfrentados pela comunidades urbanas em relaçao a seguranca alimentar, considerando o crecimento das cidades e a urbanizacao acelerada?",
         alternativas: [
             {Defe
-                texto: "A falta de espaço para cultivos li,ita o acesso a alimentos.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "A falta de espaço para cultivos li,ita o acesso a alimentos frescos.",
+               
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "O alimentodos preços dos alimentos prejudicial as populaçoes de baixa renda.",
+               
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: " Como as praticas sustentaveis na agricultura podem influenciar possitivamente a segurança alimentar global especialmente em um cenario de crecente demandado por alimentos?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "A agricultura sustentavel melhorar a qualidade do solo e almenta a produtividade.",
+                
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Praticas comorotacao de cultura reduzem o uso  de  pesticidos.",
+                
             }
         ]
     },
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "A segurança alimentar é crucial para o bem estar das sociedades e o desenvolvimento sustentavel.Garantir acessos a  alimentos nutritivos promove saude publica e fortalece economias locais alem de protejer o meio ambiente.Paraenfrentar desafios como  desigualdedes e mudanças climaticas é vital que governos organizacoes e  comunidadez colaborem A educaçao e a  consientizaçao sao essenciais para capacitar indivicuos a fazer escolhas alimentares saudaveis";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
